@@ -1,0 +1,143 @@
+:root{
+    --fuenteheading: 'Roboto Condensed', sans-serif;
+    --fuentetexto: 'Nunito', sans-serif;
+
+    --primario: #784d3c;
+    --secundario: #fc7703;
+    --blanco: #fff;
+    --negro: #000;
+
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: var(--fuentetexto);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+a{
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5{
+    font-family: var(--fuenteheading);
+}
+h1{
+    font-size: 4.2rem;
+}
+h2{
+    font-size: 3.6rem;
+}
+h3{
+    font-size: 3.2rem;
+}
+h4{
+    font-size: 2.8rem;
+}
+h5{
+    font-size: 2.4rem;
+}
+img{
+    width: 100%;
+}
+.container{
+    max-width: 120rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/** UTILIDADES **/
+.margin-none{
+    margin: 0;
+}
+.padding-none{
+    padding: 0;
+}
+.text-center{
+    text-align: center;
+}
+.shadow{
+    box-shadow: 0 0 1.6rem 0 rgba(0,0,0,0.5);
+}
+.round-s{
+    border-radius: 0.5rem;
+}
+.round-m{
+    border-radius: 1rem;
+}
+.round-l{
+    border-radius: 1.5rem;
+}
+
+/** ESTILOS **/
+.main {
+    background-image: url(../img/banner.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header a{
+    color: var(--blanco);
+}
+.logo__name{
+    font-weight: 400;
+}
+.logo__bold{
+    font-weight: 700;
+    color: var(--secundario);
+}
+.header{
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+}
+.menu__link{
+    padding: 1rem;
+    transition: ease 0.3s;
+}
+.menu__link:hover{
+    color: var(--secundario);
+}
+@media (min-width: 426px) {
+.header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav{
+        display: flex;
+        flex-direction: row;
+    }
+    .menu__link{
+        padding: 2rem;
+    }
+}
+.hero{
+    height: 60rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: absolute; */
+}
+.hero__text{
+    color: var(--blanco);
+}
+.hero__text h2{
+    text-transform: uppercase;    
+}
+
